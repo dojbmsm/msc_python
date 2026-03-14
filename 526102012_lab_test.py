@@ -32,17 +32,17 @@ class TSVAnalyzer:
         print(f"Min {min_con}")
         print(f"Max {max_con}")
         print(f"Standard D {sd_con}")
-# We can conclude that even though the mean number of conditions are a very acceptable 7.97 Max is 28000 odd which is a outlier. but generally 80 odd standard deviation is possible for a person to have connections
-
+# We can conclude that even though the mean number of conditions are a very acceptable 7.97 or 24 Max is 28000 odd which is a outlier. but generally 80 odd standard deviation is possible for a person to have connections
+# git hub https://github.com/dojbmsm/msc_python
 # --- Execution Block ---
 def main():
     # Example 1: Analyzing a sales file
-    sales_analyzer = TSVAnalyzer('youtube.tsv')
-    sales_analyzer.print_stats()
+    youtube = TSVAnalyzer('youtube.tsv')
+    youtube.print_stats()
 
     # Example 2: Analyzing a weather file
-    weather_analyzer = TSVAnalyzer('facebook.tsv')
-    weather_analyzer.print_stats()
+    facebook = TSVAnalyzer('facebook.tsv')
+    facebook.print_stats()
 
 
 if __name__ == "__main__":
